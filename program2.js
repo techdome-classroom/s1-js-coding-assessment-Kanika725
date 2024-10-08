@@ -3,7 +3,6 @@ const decodeTheRing = function (s, p) {
     // write your code here
 
     const match = (i, j) => {
-      // Base case: both the message and pattern are fully matched
       if (i === s.length && j === p.length) return true;
       
       // If pattern is exhausted but message is not, return false
