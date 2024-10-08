@@ -15,11 +15,9 @@ const decodeTheRing = function (s, p) {
         return match(i + 1, j + 1);
       }
   
-      // No match
       return false;
     };
   
-    // Start the recursive matching
     return match(0, 0);
 
   };
