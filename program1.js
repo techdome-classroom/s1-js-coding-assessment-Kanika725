@@ -19,7 +19,6 @@ const getTotalIsles = function (grid) {
    };
    for (let i = 0; i < rows; i++) {
      for (let j = 0; j < cols; j++) {
-       // If the cell contains land ('L'), it's a new island
        if (grid[i][j] === 'L') {
          totalIslands++;
          // Perform DFS to mark all connected land parts as visited
