@@ -21,7 +21,6 @@ const getTotalIsles = function (grid) {
      for (let j = 0; j < cols; j++) {
        if (grid[i][j] === 'L') {
          totalIslands++;
-         // Perform DFS to mark all connected land parts as visited
          dfs(i, j);
        }
      }
